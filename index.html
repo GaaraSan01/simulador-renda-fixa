@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador de Investimento - Renda Fixa</title>
+</head>
+<body>
+    <main>
+        <div class="content">
+            <div class="formulario">
+                <h1>Simulador de Renda Fixa</h1>
+                <div class="dados">
+                    <input type="number" name="" required="" id="valor"placeholder="Valor investido...">
+                </div>
+                <div class="dados">
+                    <input type="number" name="" required="" id="tempo" placeholder="Tempo em anos...">
+                </div>
+                <div class="dados">
+                    <label for="slider" class="slide-juros">Taxa de juros a.a: <span class="taxaJuros"></span> </label>
+                    <input id="slider" class="slider" type="range" min="5" max="18" value="5"/>
+                </div>
+                <button class="simular" id="simular">Simular</button>
+            </div>
+            <div class="res" id="res">
+                <div class="copy">
+                    
+                </div>
+                <div class="img">
+                    <img src="/img/undraw_projections_re_ulc6.svg" alt="investir">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>

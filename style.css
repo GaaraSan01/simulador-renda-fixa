@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&family=Ubuntu:wght@400;500;700&display=swap');
+:root{
+    --azul: #1B1D39;
+    --verde: #64BC9E;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background: url('/img/curitiba.jpg') no-repeat center center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    height: 70vh;
+    height: auto;
+    background: var(--azul);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.568);
+}
+.formulario{
+    color: var(--verde);
+}
+h1{
+    margin-bottom: 5vh;
+}
+.formulario .dados [type="number"]{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1em;
+    color: #f1f1f1;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid var(--verde);
+    outline: none;
+    background: transparent;
+}
+.formulario .dados [type="range"]{
+    overflow: hidden;
+    width: 100%;
+    appearance: none;
+    display: block;
+    outline: none;
+    border-radius: 15px;
+    background: #f1f1f1;
+    margin: 20px 0 20px;
+}
+.formulario .dados [type="range"]::-webkit-slider-thumb
+{
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--verde);
+    cursor: pointer;
+    border: 4px solid var(--azul);
+    box-shadow: -407px 0 0 400px var(--verde);
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-weight: 700;
+    background: var(--verde);
+    color: var(--azul);
+    border-radius: 5px;
+    margin: 12px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: filter 0.2s;
+}
+button:hover{
+    filter: brightness(0.9);
+}
+.res {
+    display: none;
+}
+.resposta{
+    height: 40vh;
+    width: 20vw;
+    background: var(--verde);
+    display: block;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.resp{
+    height: 70vh;
+    height: auto;
+    background: var(--azul);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    width: 60vw;
+    justify-content: space-around;
+    position: relative;
+}
+.img{
+    position: absolute;
+    height: 100px;
+    bottom: 51px;
+    left: 50vw;
+}
+.img img{
+    height: 100%;
+    width: 100%;
+}
